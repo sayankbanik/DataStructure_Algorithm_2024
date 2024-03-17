@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DataStructure_Algorithm_2024.iml" filepath="$PROJECT_DIR$/.idea/DataStructure_Algorithm_2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CN_JAVA_DSA/Java Basics/Java Basics.iml" filepath="$PROJECT_DIR$/CN_JAVA_DSA/Java Basics/Java Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CN_JAVA_DSA/oops/oops.iml" filepath="$PROJECT_DIR$/CN_JAVA_DSA/oops/oops.iml" />
+    </modules>
+  </component>
+</project>
