@@ -4,6 +4,9 @@ public class Teacher extends Person{
     String employeeID;
     String Qualification;
 
+    public Teacher(){
+        super(45);
+    }
     public void printTeacher(){
         System.out.println("Teacher Class "+ name+" "+emailID+" "+getPhoneNumber()+" "+Address+" "+age+" "+employeeID+" "+Qualification);
 //        System.out.println(name+" "+emailID+" "+phoneNumber+" "+Address+" "+age);
