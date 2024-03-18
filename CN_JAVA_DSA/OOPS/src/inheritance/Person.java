@@ -1,15 +1,22 @@
 package inheritance;
 
 public class Person {
-    String name;
-    String emailID;
-    String phoneNumber;
-    String Address;
-    int age;
-
+    public String name;
+    protected String emailID;
+    private String phoneNumber; // it is now accessible by Person class
+    protected String Address;
+    public int age;
+    public String getPhoneNumber(){
+        return this.phoneNumber;
+    }
+    public void setPhoneNumber(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+    }
     public void print(){
-        System.out.println("Parent Person class");
-        System.out.println(name+" "+emailID+" "+phoneNumber+" "+Address+" "+age);
+//        print(); recursive call
+
+        System.out.println("Person name "+name+" emailID "+emailID+" phoneNumber "+phoneNumber+" Address "+Address+" age "+age);
+        //System.out.println(name+" "+emailID+" "+phoneNumber+" "+Address+" "+age);
 
     }
 }

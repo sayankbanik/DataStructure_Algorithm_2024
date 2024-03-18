@@ -1,5 +1,7 @@
 package inheritance;
 
+import com.sun.source.tree.UsesTree;
+
 public class usePerson {
     public static void main(String[] args){
 
@@ -8,17 +10,19 @@ public class usePerson {
         p.emailID = "abc@email";
         p.Address ="asdfvgbhjkl";
         p.age = 25;
-        p.phoneNumber = "9951753456";
+        //p.phoneNumber = "9951753456";
+        p.setPhoneNumber("7531569987");
         p.print();
 
 
         Student s = new Student();
-        s.print();
-        s.printStudent();
+        s.print();  // it will take the print() of Student(child) class
+        //s.printStudent();
         // p.printStudent();  // not possible
         Person ps = new Student("optics");  // possible ; because student is also a person
-        System.out.println(ps.name);
-        ps.print();
+//        System.out.println(ps.name);
+//        ps.print();
+        // super used to acccess the property and method for super/parent class
 
 
 
