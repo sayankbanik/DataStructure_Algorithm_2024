@@ -68,8 +68,10 @@ public class Fraction {
     public int getNumerator(){
         return this.numerator;
     }
-    public void setDenominator(int denominator){
-        if(denominator <= 0) return;
+    public void setDenominator(int denominator) throws DividedByZeroException{
+        if(denominator <= 0)  {
+            throw new DividedByZeroException();
+        }
         this.denominator = denominator;
         simplify();
     }

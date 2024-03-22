@@ -1,8 +1,22 @@
 package fraction;
 
+import java.util.Scanner;
+
 public class FractionUse {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Fraction f1 = new Fraction(8,24);
+        int  denominator  = sc.nextInt();
+        try{
+            f1.setDenominator(denominator);
+        }catch(DividedByZeroException e){
+            System.out.println("DividedByZeroException");
+        }
+        catch(Exception e){
+            System.out.println("Generic Exception");
+        }finally {
+            sc.close();
+        }
         f1.print();
 //        f1.setDenominator();
 //        f1.getDenominator();
