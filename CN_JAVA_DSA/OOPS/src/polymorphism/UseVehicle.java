@@ -4,14 +4,43 @@ import java.util.Scanner;
 
 public class UseVehicle {
     public static void main(String[] args) {
-        Object o = new Vehicle();
-
-        Vehicle v = new Car(4, 125);
-
-        // v = new MotorCycle();
-        Car c = (Car)v; // class cast
-        c.numDoors = 10;
+        Vehicle v = new Ducatti();
+        System.out.println(v.getCompany());
+        Vehicle c = new Audi();
+        System.out.println(c.getCompany());
+        c.printVehicle();
         c.print();
+//        Vehicle v = new Car();
+//        System.out.println(v.isMotorized());
+//        System.out.println(" ");
+//        Vehicle v1 = new MotorCycle();
+//        System.out.println(v1.isMotorized());
+//        System.out.println(" ");
+//        v1.print();
+//        Car c= new Car();
+//        c.printVehicle();
+
+//        Vehicle v2 = new Vehicle(); // 'Vehicle' is abstract; cannot be instantiated
+
+//        Car c = new Vehicle(); // not
+//        Vehicle v = new Vehicle(); // Vehicle Constructor :(Default)
+//        //v = new Car(); //  Vehicle Constructor :(Default) Car's Constructor: (default)
+//        v.print(); // Vehicle  Color null MaxSpeed 0
+//        v = new Car();
+//        v.print(); // Cars NumbDoors 0
+//        Car c = new Car();
+//        c.print(); // Cars NumbDoors 0
+
+
+//        Car c = new Car(4,150);
+//        Object o = new Vehicle();
+//
+//        Vehicle v = new Car(4, 125);
+//
+//        // v = new MotorCycle();
+//        Car c = (Car)v; // class cast
+//        c.numDoors = 10;
+//        c.print();
 
 //        Car c = new Vehicle();
 ////        Vehicle v1 = new Vehicle();
